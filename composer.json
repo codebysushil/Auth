@@ -1,0 +1,24 @@
+{
+    "name": "codebysushil/auth",
+    "description": "Auth",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codebysushil\\Auth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sushil Kumar",
+            "email": "sushilkumbhar77@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "symfony/var-dumper": "^7.3"
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.10"
+    }
+}
