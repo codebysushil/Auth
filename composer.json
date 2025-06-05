@@ -20,5 +20,8 @@
     },
     "require": {
         "phpmailer/phpmailer": "^6.10"
+    },
+    "scripts": {
+        "dev:run": "@php -S localhost:8080"
     }
 }
