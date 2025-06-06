@@ -1,14 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    <link rel="icon" type="image/png" href="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-dark-theme-favico-6a6f6f67bc3e7.png">
-    <link href="./public/css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Home</h1>
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Login</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div
+                        class="column is-full-mobile is-half-tablet is-one-third-desktop has-shadow p-5 box"
+                    >
+                        <h2
+                            class="is-size-4 has-text-centered is-uppercase has-text-link mb-4"
+                        >
+                            Forget password
+                        </h2>
+                        <form action="#" method="POST">
+                            <div class="field">
+                                <label class="label" for="email">Email</label>
+                                <div class="control">
+                                    <input
+                                        class="input"
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="john@doe.com"
+                                        required
+                                    />
+                                </div>
+                            </div>
 
-  </body>
+                            <div class="field">
+                                <div class="control">
+                                    <input
+                                        class="button is-fullwidth has-background-link has-text-light is-uppercase"
+                                        type="submit"
+                                        value="Submit"
+                                        name="submit"
+                                        id="submit"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="field is-flex is-justify-content-space-between is-align-items-center"
+                            >
+                                <p>
+                                    I create an account<a
+                                        class="is-link has-text-link"
+                                        href="#"
+                                    >
+                                        register?</a
+                                    >
+                                </p>
+                                <a class="is-link has-text-link" href="#"
+                                    >Login?</a
+                                >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="./js/main.js"></script>
+    </body>
 </html>
+
