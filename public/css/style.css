@@ -1,33 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-:root {
-  --font-poppins: "Poppins", sans-serif;
-  --font-weight: 400;
-  --font-style: normal;
+html {
+    font-family: "Roboto", sans-serif;
+    --webkit-font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    --webkit-font-variation-settings: "wdth" 100;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #6b73ff, #000dff, #23a6d5, #23d5ab);
+    background-size: 500% 500%;
+    animation: gradientBG 15s ease infinite;
+    overflow: hidden;
+    position: relative;
 }
 
-
-*,*::before,*::after{
-  box-sizing: inherit;
-}
-html,body{
-  margin: 0;
-}
-html{
-  font-size: 1rem;
-  box-sizing: border-box;
-  text-size-adjust: 100%;
-}
-
-body{
-  font-family: var(--font-poppins);
-  font-style: var(--font-style);
-  font-weight: var(--font-weight);
+@keyframes gradientBG {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-size: 18px;
-  font-weight: var(--font-weight);
+.bouncing-ball {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    animation:
+        bounce 4s ease-in-out infinite,
+        moveX 8s linear infinite;
+    z-index: 0;
 }
 
+@keyframes bounce {
+    0%,
+    100% {
+        top: 0;
+    }
+    50% {
+        top: 80%;
+    }
+}
+
+@keyframes moveX {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* Variants */
+.ball1 {
+    width: 40px;
+    height: 40px;
+    background: #6b73ff;
+    animation-duration: 5s, 14s;
+    left: 10%;
+}
+
+.ball2 {
+    width: 50px;
+    height: 50px;
+    background: #000dff;
+    animation-duration: 6s, 18s;
+    left: 30%;
+}
+
+.ball3 {
+    width: 30px;
+    height: 30px;
+    background: #23d5ab;
+    animation-duration: 4s, 12s;
+    left: 50%;
+}
+
+.ball4 {
+    width: 45px;
+    height: 45px;
+    background: #23a6d5;
+    animation-duration: 7s, 20s;
+    left: 70%;
+}
+
+.ball5 {
+    width: 35px;
+    height: 35px;
+    background: #db10fa;
+    animation-duration: 5.5s, 16s;
+    left: 85%;
+}
+
+/* Ensure form stays above background */
+.container,
+.section {
+    position: relative;
+    z-index: 1;
+}
 
