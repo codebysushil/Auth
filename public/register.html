@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Register</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div
+                        class="column is-full-mobile is-half-tablet is-one-third-desktop has-shadow p-5 box"
+                    >
+                        <h2
+                            class="is-size-4 has-text-centered is-uppercase has-text-link mb-4"
+                        >
+                            Register
+                        </h2>
+                        <form action="#" method="POST">
+                            <div class="field">
+                                <label class="label" for="name">Name</label>
+                                <div class="control">
+                                    <input
+                                        class="input"
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        placeholder="John Doe"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="email">Email</label>
+                                <div class="control">
+                                    <input
+                                        class="input"
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="john@doe.com"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="password"
+                                    >Password</label
+                                >
+                                <div class="control">
+                                    <input
+                                        class="input"
+                                        type="password"
+                                        name="password"
+                                        id="password"
+                                        placeholder="John@123"
+                                        minlength="8"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label" for="cpassword"
+                                    >Confirm password</label
+                                >
+                                <div class="control">
+                                    <input
+                                        class="input"
+                                        type="password"
+                                        name="cpassword"
+                                        id="cpassword"
+                                        placeholder="John@123"
+                                    />
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <input
+                                        class="button is-fullwidth has-background-link has-text-light is-uppercase"
+                                        type="submit"
+                                        value="Register"
+                                        name="submit"
+                                        id="submit"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="field is-flex is-justify-content-space-between is-align-items-center"
+                            >
+                                <p>
+                                    I have already an account<a
+                                        class="is-link has-text-link"
+                                        href="#"
+                                    >
+                                        login?</a
+                                    >
+                                </p>
+                                <a class="is-link has-text-link" href="#"
+                                    >Forget Password?</a
+                                >
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="main.js"></script>
+    </body>
+</html>
+
