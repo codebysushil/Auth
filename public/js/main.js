@@ -1,8 +1,7 @@
-const form = document.querySelector('form');
-const name = document.querySelector('#name');
-const email = document.querySelector('#email');
-const pass = document.querySelector('#password');
-const cpass = document.querySelector('#cpassword');
-
-
-
+$(document).ready(function () {
+    const form = document.querySelector("form");
+    const uname = document.querySelector("#name");
+    const email = document.querySelector("#email");
+    const pass = document.querySelector("#password");
+    const cpass = document.querySelector("#cpassword");
+});
