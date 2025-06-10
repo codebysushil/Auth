@@ -1,7 +1,15 @@
 $(document).ready(function () {
-    const form = document.querySelector("form");
-    const uname = document.querySelector("#name");
-    const email = document.querySelector("#email");
-    const pass = document.querySelector("#password");
-    const cpass = document.querySelector("#cpassword");
+    $("#login").on("click", function (e) {
+        e.preventDefault();
+        const email = $("#email").val();
+        const password = $("#password").val();
+        
+        $.post("../src/login.php", {
+            user_email: email,
+            user_password: password
+        }, function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+        //console.log(email, password);
+    });
 });
