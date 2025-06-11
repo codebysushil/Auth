@@ -11,6 +11,10 @@
         <!--link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />-->
         <link rel="stylesheet" href="./css/all.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/eruda.js"></script>
+        <script>
+            eruda.init();
+        </script>
     </head>
     <body>
         <section class="section">
@@ -24,7 +28,7 @@
                         >
                             Register
                         </h2>
-                        <form action="#" method="POST">
+                        <form id="form" method="POST">
                             <div class="field">
                                 <label class="label" for="name">Name</label>
                                 <div class="control">
@@ -49,6 +53,10 @@
                                         placeholder="john@doe.com"
                                         required
                                     />
+                                    <span
+                                        class="has-text-danger"
+                                        id="emailMsg"
+                                    ></span>
                                 </div>
                             </div>
                             <div class="field">
@@ -89,9 +97,13 @@
                                         class="button is-fullwidth has-background-link has-text-light is-uppercase"
                                         type="submit"
                                         value="Register"
-                                        name="submit"
-                                        id="submit"
+                                        name="register"
+                                        id="register"
                                     />
+                                    <span
+                                        class="has-text-danger"
+                                        id="msg"
+                                    ></span>
                                 </div>
                             </div>
                             <div
@@ -118,6 +130,6 @@
         </section>
 
         <script src="./js/jquery.min.js"></script>
-        <script src="./js/main.js"></script>
+        <script src="./js/register.js"></script>
     </body>
 </html>

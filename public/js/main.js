@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $("#login").on("submit", function () {
-        //e.preventDefault();
+    $("#login").on("click", function (e) {
+        e.preventDefault();
         const email = $("#email").val();
         const password = $("#password").val();
 
@@ -25,4 +25,18 @@ $(document).ready(function () {
         );
         //console.log(email, password);
     });
+
+    $("#register").on("click", function (ev) {
+        ev.preventDefault();
+        alert(ev);
+        console.log(ev);
+       // $.ajax({
+    //        method: "POST",
+     //       url: "../src/register.php"
+        //    });
+    });
+
+    function ajax() {
+        //
+    }
 });
