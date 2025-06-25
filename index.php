@@ -12,4 +12,8 @@ spl_autoload_register(function ($class) {
 
     }
 });
-//$app->run();
+
+session_start();
+session_regenerate_id(true);
+
+

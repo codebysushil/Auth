@@ -17,9 +17,9 @@
             "App\\": "src/"
         }
     },
-    "autoload": {
+    "autoload-dev": {
         "psr-4": {
-            "Tests": "tests/"
+            "Tests\\": "tests/"
         }
     },
     "authors": [
