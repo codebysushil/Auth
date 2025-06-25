@@ -1,1 +1,0 @@
-{"version":1,"defects":{"Tests\\ExampleTest::testSetName":8,"Tests\\ExampleTest::testTwoNumbersAreSame":8},"times":{"Tests\\ExampleTest::testTwoNumbersAreSame":0.001,"Tests\\ExampleTest::testSetName":0.001}}
