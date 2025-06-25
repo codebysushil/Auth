@@ -1,7 +1,8 @@
 # Auth Project
-- An object oriented MVC framework and session based **Login** and **Registration** system.
 
 [![Tests](https://github.com/codebysushil/Auth/actions/workflows/Tests.yml/badge.svg?branch=main)](https://github.com/codebysushil/Auth/actions/workflows/Tests.yml)
+
+An object oriented MVC framework and session based **Login** and **Registration** system.
 
 ___
 
