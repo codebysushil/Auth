@@ -1,6 +1,11 @@
 # Auth Project
 
 [![Tests](https://github.com/codebysushil/Auth/actions/workflows/Tests.yml/badge.svg?branch=main)](https://github.com/codebysushil/Auth/actions/workflows/Tests.yml)
+![GitHub License](https://img.shields.io/github/license/codebysushil/Auth?style=flat&logo=github&color=blue)
+![GitHub Release](https://img.shields.io/github/v/release/codebysushil/Auth?style=flat&logo=github&color=blue)
+![Packagist Downloads](https://img.shields.io/packagist/dt/codebysushil/Auth?style=flat&color=blue)
+
+
 
 An object oriented MVC framework and session based **Login** and **Registration** system.
 
@@ -26,7 +31,7 @@ ___
 
 ### Testing
 PHPUnit framework used here.
-  
+
 ```bash
 composer phpunit --testdox
 ```
