@@ -1,6 +1,5 @@
 /tests/ export-ignore
 /README.md export-ignore
-/composer.json export-ignore
 /composer.lock export-ignore
 /LICENSE export-ignore
 /vendor/ export-ignore
