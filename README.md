@@ -3,7 +3,7 @@
 [![Tests](https://github.com/codebysushil/Auth/actions/workflows/Tests.yml/badge.svg?branch=main)](https://github.com/codebysushil/Auth/actions/workflows/Tests.yml)
 ![GitHub License](https://img.shields.io/github/license/codebysushil/Auth?style=flat&logo=github&color=blue)
 ![GitHub Release](https://img.shields.io/github/v/release/codebysushil/Auth?style=flat&logo=github&color=blue)
-![Packagist Downloads](https://img.shields.io/packagist/dt/codebysushil/Auth?style=flat&color=blue)
+![Packagist Downloads](https://img.shields.io/packagist/dt/codebysushil/Auth?style=flat&logo=composer&color=blue)
 
 
 
