@@ -21,6 +21,14 @@ ___
 
 ___
 
+### Install
+
+```bash
+composer create-project codebysushil/auth
+```
+
+___
+
 ### Run server
 Start built-in __PHP Server__.
 
