@@ -1,0 +1,29 @@
+name: 🔄 Changelog Entry
+description: Suggest a changelog entry
+labels: [changelog]
+body:
+  - type: dropdown
+    attributes:
+      label: Type of change
+      options:
+        - Added
+        - Changed
+        - Deprecated
+        - Removed
+        - Fixed
+        - Security
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Description
+      description: Describe the change
+      placeholder: "Added support for X..."
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Related PR or Issue
+      placeholder: "#123"
