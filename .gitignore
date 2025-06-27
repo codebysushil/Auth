@@ -6,3 +6,4 @@ composer.lock
 /*.db
 /*.sqlite
 /*.sqlite3
+.phpunit.cache/
