@@ -1,0 +1,9 @@
+parameters:
+    level: 6
+
+    reportUnmatchedIgnoredErrors: false
+    treatPhpDocTypesAsCertain: false
+
+    paths:
+        - 'app/'
+
