@@ -12,7 +12,7 @@ if (!is_dir(__DIR__ . '/logs')) {
 }
 
 // Custom error handler
-function errorHandler($errNo, $errStr, $errFile, $errLine)
+function errorHandler(string $errNo, string $errStr, string $errFile, string $errLine): mixed
 {
     $errorTypes = [
         E_ERROR             => 'Error',
@@ -41,7 +41,7 @@ function errorHandler($errNo, $errStr, $errFile, $errLine)
 }
 
 // Custom exception handler
-function exceptionHandler(Throwable $exception)
+function exceptionHandler(Throwable $exception): void
 {
     $timestamp = date('Y-m-d H:i:s');
     $message = "[$timestamp] Uncaught Exception: " . $exception->getMessage() .
@@ -54,4 +54,3 @@ function exceptionHandler(Throwable $exception)
 
 set_error_handler('errorHandler');
 set_exception_handler('exceptionHandler');
-

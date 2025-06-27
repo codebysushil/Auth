@@ -34,7 +34,7 @@
           "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "test:unit": "phpunit",
-        "test:type": "phpstan analyse src",
+        "test:type": "phpstan analyse --ansi",
         "test": ["@test:unit", "@test:type"]
     },
     "config": {
