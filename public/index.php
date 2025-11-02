@@ -7,7 +7,7 @@
     <meta name="description" content="Auth Project, PHP Project">
     <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="/icon.png">
-    <title><?= $title ?? 'Auth Project';?></title>
+    <title><?= $title ?? 'Auth Project'; ?></title>
 
     <link rel="stylesheet" href="./css/app.css" />
 </head>
