@@ -24,7 +24,7 @@ ___
 ### Install
 
 ```bash
-composer create-project codebysushil/auth
+composer create-project codebysushil/auth MyApp
 ```
 
 ___
