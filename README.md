@@ -33,7 +33,7 @@ ___
 Start built-in __PHP Server__.
 
 ```bash
-php -S localhost:8080
+php -S localhost:8080 -t public
 ```
 ___
 
