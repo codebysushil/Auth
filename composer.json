@@ -39,7 +39,11 @@
         "test:lint": "pint",
         "test:unit": "phpunit",
         "test:type": "phpstan analyse --ansi",
-        "test": ["test:lint","@test:unit", "@test:type"]
+        "test": [
+            "@test:lint",
+            "@test:unit",
+            "@test:type"
+        ]
     },
     "config": {
         "optimize-autoloader": true,
