@@ -6,7 +6,7 @@ class RouteService
 {
     private static $routes = [];
 
-    private static function add($uri, $controller, $action, $method='GET', $middleware=[])
+    private static function add($uri, $controller, $action, $method = 'GET', $middleware = [])
     {
         self::$routes[] = [
             'method' => $method,
@@ -17,7 +17,7 @@ class RouteService
         ];
     }
 
-    public static function get($uri, $controller, $action, $middleware=[])
+    public static function get($uri, $controller, $action, $middleware = [])
     {
         self::add('GET', $uri, $controller, $action, $middleware);
     }
@@ -47,14 +47,13 @@ class RouteService
         $requestMethod = $_SERVER['REQUEST_METHOD'];
         $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-        foreach(self::$routes as $route){
-            if($route['method'] === $requestMethod && $route['uri'] === $requestUri){
+        foreach (self::$routes as $route) {
+            if ($route['method'] === $requestMethod && $route['uri'] === $requestUri) {
                 return call_user_func($route['action']);
             }
         }
 
         http_response_code(404);
-        echo "404 Not Found";
+        echo '404 Not Found';
     }
-
 }
