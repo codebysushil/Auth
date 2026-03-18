@@ -1,20 +1,8 @@
 <?php
 
-// declare(strict_types=1);
+use Dotenv\Dotenv;
 
-namespace App;
+$dotenv = Dotenv::createImmutable(dirname(__DIR__));
+$dotenv->load();
 
-class App
-{
-    private string $app;
-
-    public function __construct($name)
-    {
-        $this->app = $name;
-    }
-
-    public function getName()
-    {
-        return $this->app;
-    }
-}
+require_once(__DIR__.'/helpers.php');

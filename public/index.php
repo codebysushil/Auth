@@ -3,7 +3,7 @@
 // define('APP_ROOT', __DIR__);
 
 require_once __DIR__.'/../vendor/autoload.php';
-// 'require_once(__DIR__."/../bootstrap/");
+require_once(__DIR__."/../bootstrap/App.php");
 
 spl_autoload_register(function ($class) {
     $classFile = str_replace('\\', DIRECTORY_SEPARATOR, $class.'.php');
