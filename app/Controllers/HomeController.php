@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-class HomeController extends Controller
+use App\Controllers\BaseController;
+
+class HomeController extends BaseController
 {
     public function index(): string
     {

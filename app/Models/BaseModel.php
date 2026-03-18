@@ -6,5 +6,5 @@ namespace App\Models;
 
 class BaseModel
 {
-    protected $table = '';
+    protected string $table = '';
 }
