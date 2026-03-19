@@ -2,7 +2,8 @@
 
 function view(string $file): string
 {
-    if (file_exists($file)) {
-        require_once $file;
+   echo $path = __dir__.'/resources/views/'.$file.'.php';
+    if (file_exists($path)) {
+        require_once $path;
     }
 }
