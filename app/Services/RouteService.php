@@ -5,6 +5,8 @@ namespace App\Services;
 class RouteService
 {
     private static $routes = [];
+    private static $params = [];
+    private static $controllerNamespace = "App\\Controllers";
 
     private static function add($uri, $controller, $action, $method = 'GET', $middleware = [])
     {
@@ -22,24 +24,24 @@ class RouteService
         self::add('GET', $uri, $controller, $action, $middleware);
     }
 
-    public static function post()
+    public static function post($uri, $controller, $action, $middleware=[])
     {
-        //
+        self::add('POST', $uri, $controller, $action, $middleware);
     }
 
-    public static function put()
+    public static function put($uri, $controller, $action, $middleware=[])
     {
-        //
+        self::add('PUT', $uri, $controller, $action, $middleware);
     }
 
-    public static function patch()
+    public static function patch($uri, $controller, $action, $middleware=[])
     {
-        //
+        self::add('PATCH', $uri, $controller, $action, $middleware);
     }
 
-    public static function delete()
+    public static function delete($uri, $controller, $action, $middleware=[])
     {
-        //
+        self::add('DELETE', $uri, $controller, $action, $middleware);
     }
 
     public static function dispatch()
@@ -55,5 +57,9 @@ class RouteService
 
         http_response_code(404);
         echo '404 Not Found';
+    }
+
+    private static function dinamicRoute(){
+        // route
     }
 }
