@@ -12,10 +12,10 @@ $params = [
     'domain' => 'localhost',
     'secure' => true,
     'httponly' => true,
-    'samesite' => 'samesite_lax'
+    'samesite' => 'samesite_lax',
 ];
 
 session_set_cookie_params($params);
-# session_get_cookie_params();
+// session_get_cookie_params();
 
-//setcookie('name','sushil',time()+(86400*30),'/', 'localhost', true, true);
+// setcookie('name','sushil',time()+(86400*30),'/', 'localhost', true, true);

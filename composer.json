@@ -45,7 +45,7 @@
         "test:lint": "pint",
         "test:unit": "phpunit",
         "test:type": "phpstan analyse --ansi",
-        "test": [
+        "tests": [
             "@test:lint",
             "@test:unit",
             "@test:type"
