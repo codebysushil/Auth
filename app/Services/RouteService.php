@@ -4,11 +4,11 @@ namespace App\Services;
 
 class RouteService
 {
-    private static $routes = [];
+    private static array $routes = [];
 
-    private static $params = [];
+    private static array $params = [];
 
-    private static $controllerNamespace = 'App\\Controllers';
+    private static string $controllerNamespace = 'App\\Controllers';
 
     private static function add($uri, $controller, $action, $method = 'GET', $middleware = [])
     {
