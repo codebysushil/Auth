@@ -63,7 +63,8 @@
         "preferred-install": "dist",
         "allow-plugins": {
             "phpstan/extension-installer": true
-        }
+        },
+        "process-timeout": 0
     },
     "minimum-stability": "dev",
     "prefer-stable": true
